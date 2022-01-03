@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#CardsWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    padding: 40px;
+    margin: 20px;
+    background-color: black;
+    color-interpolation-filters: gold;
+    text-align: center;
+}
