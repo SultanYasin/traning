@@ -1,3 +1,4 @@
+/*
 let Admines = ["Ahmed", "Osama", "Sayed", "Stop", "zdd"];
 let Employee = ["Amgad", "Samah", "Ameer", "Omar", "Othman", "Amany", "Samia"];
 
@@ -35,46 +36,8 @@ for ( i = 0; i < Admines.length; i++) {
 }
 document.write(`we have ${z} admins`)
 
+777
+*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* let counter = 0;
-document.write(`<h1>We Have ${Admines.length} Admines</h1>`);
-for(let i=0; i < Admines.length; i++) {
-    document.write(`<hr>`);
-    document.write(`<h1>Team Members</h1>`);
-        document.write(`<h2>The Admine  ${i + 1} for Teame is ${Admines[i]}</h2>`);
-        for(let j=0; j < Employee.length; j++) {
-            if(Employee[j].charAt(0) === Admines[i][0]) {
-                counter+=1;
-                document.write(`<h3> - ${counter} is ${Employee[j]}</h3>`)
-            }
-        }   
-        counter = 0;
-    }*/
