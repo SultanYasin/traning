@@ -1210,4 +1210,59 @@ console.log(newNum);
  console.log(addSelf);*/
 
 /*console.log(x= num.map((el)=>el*2));*/
-   
+
+   //invert the letters from capital letters to small letters
+
+/* let swa = "SuLtAn YaSiN"
+let newSwa = swa.split("").map(function (ele) {
+    return ele===ele.toLowerCase()?ele.toUpperCase():ele.toLowerCase();
+}).join("")
+console.log(newSwa);
+
+//how to invert the numbers from + to -
+
+let invertnumber = [-1,2,-3,4,-5]
+let inv=invertnumber.map(function (el) {
+    return -el;
+})
+console.log(inv);
+
+let ignoreNumbers = "S1u9l9t4a0n5"
+let ign = ignoreNumbers.split("").map( function (ele) {
+    return isNaN (parseInt(ele)) ? ele : ""
+} ).join("");
+console.log(ign); */
+
+let ignoreNumbers = "S1u9l9t4a0n5"
+/* let ign = ignoreNumbers.split("").map( function (ele) {
+   return isNaN(parseInt(ele)) ? ele : ""; 
+} ).join("");
+console.log(ign); */
+let ign = ignoreNumbers.split("").map((a) => isNaN(parseInt(a))?a : "").join("")
+console.log(ign);
+
+
+
+
+
+let invertnumber = [-1,2,-3,4,-5]
+/* let inv = invertnumber.map( function (ele) {
+   return -ele 
+} )
+console.log(inv) */
+
+console.log( inv = invertnumber.map((a)=>-a));
+
+
+
+
+
+
+let swa = "SuLtAn YaSiN"
+/* let newSwa = swa.split("").map( function (ele) {
+    return ele===ele.toUpperCase()? ele.toLowerCase() : ele.toUpperCase();
+} ).join("") */
+
+
+let newSwa = swa.split("").map((a)=> a===a.toLowerCase()?a.toUpperCase():a.toLowerCase()).join("")
+console.log(newSwa);
