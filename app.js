@@ -1183,8 +1183,31 @@ Object.assign(vila, {
 // ---------------------------------------------
 
 
+/* let names = (...x)=> {return`String [${x.join("],[")}] => G-8 !`};
+console.log(names("Sultan","Yasin","Mikael")) */
+
+/* let names = function(...x){
+  return `[${x.join("],[")}] => !Done`
+}
+console.log(names("SS",";;", "ssdf"));
+ */
+//I can get the same output by remobing return satement from the arrow function
+/* let names = (...x)=> `String [${x.join("],[")}] => Done !`
+console.log(names("Sultan","Yasin","Mikael")) */
 
 
 
+/*let num = [1,5,8,9]
+ 
+Diffrent wayes to solv same problem
+let newNum = [];
+for (let i = 0; i < num.length; i++) newNum.push(num[i]*2)
+console.log(newNum);
+   */
+/*  let addSelf = num.map(function(el){
+   return el *2
+ }) 
+ console.log(addSelf);*/
 
-
+/*console.log(x= num.map((el)=>el*2));*/
+   
