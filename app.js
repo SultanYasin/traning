@@ -1238,10 +1238,13 @@ let ignoreNumbers = "S1u9l9t4a0n5"
    return isNaN(parseInt(ele)) ? ele : ""; 
 } ).join("");
 console.log(ign); */
-let ign = ignoreNumbers.split("").map((a) => isNaN(parseInt(a))?a : "").join("")
-console.log(ign);
-
-
+//console.log(ignore = ignoreNumbers.split("").map((a)=>isNaN(parseInt(a)) ? a : "").join(""));
+//It can be solved ethir by map or filter
+let ign = ignoreNumbers.split("").filter( function (p) {
+    return isNaN(parseInt(p))
+ } ).join("")
+ console.log(ign);
+console.log(ignoreNumbers.split("").filter((x)=>isNaN(parseInt(x)) ).join("-"));
 
 
 
@@ -1251,18 +1254,22 @@ let invertnumber = [-1,2,-3,4,-5]
 } )
 console.log(inv) */
 
-console.log( inv = invertnumber.map((a)=>-a));
-
-
-
-
+console.log(inv = invertnumber.map((x)=>-x));
 
 
 let swa = "SuLtAn YaSiN"
 /* let newSwa = swa.split("").map( function (ele) {
     return ele===ele.toUpperCase()? ele.toLowerCase() : ele.toUpperCase();
 } ).join("") */
+console.log(newSwa = swa.split("").map((a)=>a==a.toLowerCase()?a.toUpperCase():a.toLowerCase()).join(""));
 
+let friends = ["ab","ac","bb","az", "ss"]
+console.log( friends.filter((el)=> el.startsWith("a")).join(".."));
 
-let newSwa = swa.split("").map((a)=> a===a.toLowerCase()?a.toUpperCase():a.toLowerCase()).join("")
-console.log(newSwa);
+let numbers = [1,2,8,9,4,6,5,7]
+console.log(numbers.filter((x)=> x%2==0));
+console.log(numbers.filter((x)=> x%2==1));
+
+let sentence = "I Love Foood Code Too Playing Much";
+console.log(sentence.split(" ").filter((ele)=>ele.length<=4).join(" "));
+
