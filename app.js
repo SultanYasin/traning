@@ -1273,3 +1273,6 @@ console.log(numbers.filter((x)=> x%2==1));
 let sentence = "I Love Foood Code Too Playing Much";
 console.log(sentence.split(" ").filter((ele)=>ele.length<=4).join(" "));
 
+let mix = "A13BS2ZX8 3 4  f d e 3 ";
+// concatinate  map and filter 
+console.log(mix.split("").filter((x)=> !isNaN(parseInt(x))).map((x)=>x*x) .join(" "));
